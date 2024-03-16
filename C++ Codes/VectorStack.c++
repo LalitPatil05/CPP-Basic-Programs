@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 int main(){
+
     vector <int> vtr;
     vtr.push_back(1);
     vtr.push_back(2);
@@ -12,6 +13,16 @@ int main(){
     vtr.push_back(7);
     vtr.push_back(8);
     vtr.push_back(9);
+
+    for(int i = 0 ; i<vtr.size() ; i++){
+        cout<<vtr[i]<<"|";
+    }
+    cout<<endl;
+    
+    cout<<"After Poped Element in Stack..!!"<<endl;
+
+    vtr.pop_back();
+    vtr.pop_back();
     vtr.pop_back();
 
     for(int i = 0 ; i<vtr.size() ; i++){
