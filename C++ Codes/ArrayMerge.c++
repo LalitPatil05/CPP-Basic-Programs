@@ -2,24 +2,23 @@
 using namespace std;
 
 int main(){
-    int i;
 
-    int arr[] = {1,2,3,4,5};
+    int m = 5;
+    int n = 3;
 
-    int arr2[] = {6,7,8};
+    int arr[m] = {1,2,3,4,5};
+    int arr2[n] = {6,7,8};
 
-   int m = 5;
-   int n = 3;
-
-   for(i = 0; i < n ; i++){
+   for(int i = 0; i < n ; i++){
         arr[m+i] = arr2[i];
    }
 
     // print Array..........
 
-   for(i=0;i<8;i++){
+   for(int i = 0 ; i < (m+n) ; i++) {
         cout<<arr[i]<<" , ";
     }
 
     return 0;
+
 }
